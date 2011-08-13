@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4A2D9A6813F627F900B38898 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A2D9A6613F627F900B38898 /* ball.png */; };
 		4A2D9A6913F627F900B38898 /* old_faithful.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A2D9A6713F627F900B38898 /* old_faithful.png */; };
+		4A2D9A6B13F62B7D00B38898 /* null_bat.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A2D9A6A13F62B7D00B38898 /* null_bat.png */; };
 		4AA5A59213F4B7AD00C726AE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA5A59113F4B7AD00C726AE /* QuartzCore.framework */; };
 		4AA5A59413F4B7AD00C726AE /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA5A59313F4B7AD00C726AE /* OpenGLES.framework */; };
 		4AA5A59613F4B7AD00C726AE /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA5A59513F4B7AD00C726AE /* OpenAL.framework */; };
@@ -166,6 +167,7 @@
 /* Begin PBXFileReference section */
 		4A2D9A6613F627F900B38898 /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
 		4A2D9A6713F627F900B38898 /* old_faithful.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = old_faithful.png; sourceTree = "<group>"; };
+		4A2D9A6A13F62B7D00B38898 /* null_bat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = null_bat.png; sourceTree = "<group>"; };
 		4AA5A58D13F4B7AD00C726AE /* Schplow Baseball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Schplow Baseball.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AA5A59113F4B7AD00C726AE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4AA5A59313F4B7AD00C726AE /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -498,6 +500,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A2D9A6C13F62CE300B38898 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4A2D9A6A13F62B7D00B38898 /* null_bat.png */,
+				4A2D9A6613F627F900B38898 /* ball.png */,
+				4A2D9A6713F627F900B38898 /* old_faithful.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		4AA5A58213F4B7AD00C726AE = {
 			isa = PBXGroup;
 			children = (
@@ -533,8 +545,7 @@
 		4AA5A5A113F4B7AD00C726AE /* Schplow Baseball */ = {
 			isa = PBXGroup;
 			children = (
-				4A2D9A6613F627F900B38898 /* ball.png */,
-				4A2D9A6713F627F900B38898 /* old_faithful.png */,
+				4A2D9A6C13F62CE300B38898 /* Images */,
 				4AA5A76613F4B7AF00C726AE /* AppDelegate.h */,
 				4AA5A76713F4B7AF00C726AE /* AppDelegate.mm */,
 				4AA5A76913F4B7AF00C726AE /* RootViewController.h */,
@@ -1071,6 +1082,7 @@
 				4AA5A77413F4B7AF00C726AE /* blocks.png in Resources */,
 				4A2D9A6813F627F900B38898 /* ball.png in Resources */,
 				4A2D9A6913F627F900B38898 /* old_faithful.png in Resources */,
+				4A2D9A6B13F62B7D00B38898 /* null_bat.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -115,7 +115,7 @@ enum {
 		
 		//Set up sprite
 		
-		CCSpriteBatchNode *batch = [CCSpriteBatchNode batchNodeWithFile:@"old_faithful.png" capacity:150];
+		CCSpriteBatchNode *batch = [CCSpriteBatchNode batchNodeWithFile:@"null_bat.png" capacity:150];
 		[self addChild:batch z:0 tag:kTagBatchNode];
 		
 		[self addNewSpriteWithCoords:ccp(screenSize.width/2, screenSize.height/2)];
@@ -168,7 +168,7 @@ enum {
 	bodyDef.userData = sprite;
 	b2Body *body = world->CreateBody(&bodyDef);
 	
-	// Define another box shape for our dynamic body.
+    //TOP CIRCLE
 	b2CircleShape dynamicBat5;
     dynamicBat5.m_radius = 32/PTM_RATIO;
     dynamicBat5.m_p = b2Vec2(0/PTM_RATIO, 112/PTM_RATIO);
@@ -179,11 +179,9 @@ enum {
     fixtureDef5.restitution = .2f;
 	body->CreateFixture(&fixtureDef5);
     
-    // Define another box shape for our dynamic body.
-	b2PolygonShape dynamicBat;
-	dynamicBat.SetAsBox(32.0/PTM_RATIO,32.0/PTM_RATIO,b2Vec2(0, 80.0/PTM_RATIO),0);
-	
-	// Define the dynamic body fixture.
+    //SWEET SPOT
+    b2PolygonShape dynamicBat;
+	dynamicBat.SetAsBox(30.0/PTM_RATIO,32.0/PTM_RATIO,b2Vec2(0, 64.0/PTM_RATIO),0);
 	b2FixtureDef fixtureDef;
 	fixtureDef.shape = &dynamicBat;	
 	fixtureDef.density = 1.0f;
@@ -191,11 +189,9 @@ enum {
     fixtureDef.restitution = .5f;
 	body->CreateFixture(&fixtureDef);
     
-    // Define another box shape for our dynamic body.
-	b2PolygonShape dynamicBat2;
-	dynamicBat2.SetAsBox(32.0/PTM_RATIO,32.0/PTM_RATIO,b2Vec2(0, 52.0/PTM_RATIO),0);
-	
-	// Define the dynamic body fixture.
+    //BARREL
+    b2PolygonShape dynamicBat2;
+	dynamicBat2.SetAsBox(25.0/PTM_RATIO,32.0/PTM_RATIO,b2Vec2(0, 0.0/PTM_RATIO),0);
 	b2FixtureDef fixtureDef2;
 	fixtureDef2.shape = &dynamicBat2;	
 	fixtureDef2.density = 1.0f;
@@ -203,11 +199,9 @@ enum {
     fixtureDef2.restitution = .8f;
 	body->CreateFixture(&fixtureDef2);
     
-    // Define another box shape for our dynamic body.
+    //HANDLE
 	b2PolygonShape dynamicBat3;
 	dynamicBat3.SetAsBox(12.0/PTM_RATIO,46.0/PTM_RATIO,b2Vec2(0, -70.0/PTM_RATIO),0);
-	
-	// Define the dynamic body fixture.
 	b2FixtureDef fixtureDef3;
 	fixtureDef3.shape = &dynamicBat3;	
 	fixtureDef3.density = 1.0f;
@@ -215,13 +209,10 @@ enum {
     fixtureDef3.restitution = .2f;
 	body->CreateFixture(&fixtureDef3);
 
-    // Define another box shape for our dynamic body.
+    //BOTTOM CIRCLE
 	b2CircleShape dynamicBat4;
     dynamicBat4.m_radius = 20.0/PTM_RATIO;
     dynamicBat4.m_p = b2Vec2(0.0/PTM_RATIO, -110.0/PTM_RATIO);
-
-	
-	// Define the dynamic body fixture.
 	b2FixtureDef fixtureDef4;
 	fixtureDef4.shape = &dynamicBat4;	
 	fixtureDef4.density = 1.0f;
