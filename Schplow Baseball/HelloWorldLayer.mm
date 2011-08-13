@@ -169,6 +169,17 @@ enum {
 	b2Body *body = world->CreateBody(&bodyDef);
 	
 	// Define another box shape for our dynamic body.
+	b2CircleShape dynamicBat5;
+    dynamicBat5.m_radius = 32/PTM_RATIO;
+    dynamicBat5.m_p = b2Vec2(0/PTM_RATIO, 112/PTM_RATIO);
+    b2FixtureDef fixtureDef5;
+	fixtureDef5.shape = &dynamicBat5;	
+	fixtureDef5.density = 1.0f;
+	fixtureDef5.friction = 0.3f;
+    fixtureDef5.restitution = .2f;
+	body->CreateFixture(&fixtureDef5);
+    
+    // Define another box shape for our dynamic body.
 	b2PolygonShape dynamicBat;
 	dynamicBat.SetAsBox(32.0/PTM_RATIO,32.0/PTM_RATIO,b2Vec2(0, 80.0/PTM_RATIO),0);
 	
@@ -207,7 +218,7 @@ enum {
     // Define another box shape for our dynamic body.
 	b2CircleShape dynamicBat4;
     dynamicBat4.m_radius = 20.0/PTM_RATIO;
-    dynamicBat4.m_p = b2Vec2(0/PTM_RATIO, -110.0/PTM_RATIO);
+    dynamicBat4.m_p = b2Vec2(0.0/PTM_RATIO, -110.0/PTM_RATIO);
 
 	
 	// Define the dynamic body fixture.
@@ -219,16 +230,7 @@ enum {
 	body->CreateFixture(&fixtureDef4);
     
     
-    // Define another box shape for our dynamic body.
-	b2CircleShape dynamicBat5;
-    dynamicBat5.m_radius = 32/PTM_RATIO;
-    dynamicBat5.m_p = b2Vec2(0/PTM_RATIO, 112/PTM_RATIO);
-    b2FixtureDef fixtureDef5;
-	fixtureDef5.shape = &dynamicBat5;	
-	fixtureDef5.density = 1.0f;
-	fixtureDef5.friction = 0.3f;
-    fixtureDef5.restitution = .2f;
-	body->CreateFixture(&fixtureDef5);
+    
 }
 
 -(void) tick: (ccTime) dt
