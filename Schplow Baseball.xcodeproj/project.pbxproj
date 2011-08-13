@@ -7,11 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		110EEAA413F5E36B00D63490 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 110EEA9F13F5E36B00D63490 /* ball.png */; };
-		110EEAA513F5E36B00D63490 /* ball_FULL.png in Resources */ = {isa = PBXBuildFile; fileRef = 110EEAA013F5E36B00D63490 /* ball_FULL.png */; };
-		110EEAA613F5E36B00D63490 /* Baseball.fla in Resources */ = {isa = PBXBuildFile; fileRef = 110EEAA113F5E36B00D63490 /* Baseball.fla */; };
-		110EEAA713F5E36B00D63490 /* old_faithful.png in Resources */ = {isa = PBXBuildFile; fileRef = 110EEAA213F5E36B00D63490 /* old_faithful.png */; };
-		110EEAA813F5E36B00D63490 /* old_faithful_FULL.png in Resources */ = {isa = PBXBuildFile; fileRef = 110EEAA313F5E36B00D63490 /* old_faithful_FULL.png */; };
+		4A2D9A6813F627F900B38898 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A2D9A6613F627F900B38898 /* ball.png */; };
+		4A2D9A6913F627F900B38898 /* old_faithful.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A2D9A6713F627F900B38898 /* old_faithful.png */; };
 		4AA5A59213F4B7AD00C726AE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA5A59113F4B7AD00C726AE /* QuartzCore.framework */; };
 		4AA5A59413F4B7AD00C726AE /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA5A59313F4B7AD00C726AE /* OpenGLES.framework */; };
 		4AA5A59613F4B7AD00C726AE /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA5A59513F4B7AD00C726AE /* OpenAL.framework */; };
@@ -167,11 +164,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		110EEA9F13F5E36B00D63490 /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ball.png; path = images/ball.png; sourceTree = "<group>"; };
-		110EEAA013F5E36B00D63490 /* ball_FULL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_FULL.png; sourceTree = "<group>"; };
-		110EEAA113F5E36B00D63490 /* Baseball.fla */ = {isa = PBXFileReference; lastKnownFileType = file; path = Baseball.fla; sourceTree = "<group>"; };
-		110EEAA213F5E36B00D63490 /* old_faithful.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = old_faithful.png; path = images/old_faithful.png; sourceTree = "<group>"; };
-		110EEAA313F5E36B00D63490 /* old_faithful_FULL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = old_faithful_FULL.png; sourceTree = "<group>"; };
+		4A2D9A6613F627F900B38898 /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
+		4A2D9A6713F627F900B38898 /* old_faithful.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = old_faithful.png; sourceTree = "<group>"; };
 		4AA5A58D13F4B7AD00C726AE /* Schplow Baseball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Schplow Baseball.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AA5A59113F4B7AD00C726AE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4AA5A59313F4B7AD00C726AE /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -504,16 +498,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		110EEA9E13F5E36B00D63490 /* images */ = {
-			isa = PBXGroup;
-			children = (
-				110EEAA013F5E36B00D63490 /* ball_FULL.png */,
-				110EEAA113F5E36B00D63490 /* Baseball.fla */,
-				110EEAA313F5E36B00D63490 /* old_faithful_FULL.png */,
-			);
-			path = images;
-			sourceTree = "<group>";
-		};
 		4AA5A58213F4B7AD00C726AE = {
 			isa = PBXGroup;
 			children = (
@@ -549,18 +533,17 @@
 		4AA5A5A113F4B7AD00C726AE /* Schplow Baseball */ = {
 			isa = PBXGroup;
 			children = (
+				4A2D9A6613F627F900B38898 /* ball.png */,
+				4A2D9A6713F627F900B38898 /* old_faithful.png */,
 				4AA5A76613F4B7AF00C726AE /* AppDelegate.h */,
 				4AA5A76713F4B7AF00C726AE /* AppDelegate.mm */,
 				4AA5A76913F4B7AF00C726AE /* RootViewController.h */,
 				4AA5A76A13F4B7AF00C726AE /* RootViewController.m */,
 				4AA5A76C13F4B7AF00C726AE /* HelloWorldLayer.h */,
 				4AA5A76D13F4B7AF00C726AE /* HelloWorldLayer.mm */,
-				110EEA9F13F5E36B00D63490 /* ball.png */,
-				110EEAA213F5E36B00D63490 /* old_faithful.png */,
 				4AA5A76F13F4B7AF00C726AE /* GLES-Render.h */,
 				4AA5A77013F4B7AF00C726AE /* GLES-Render.mm */,
 				4AA5A77213F4B7AF00C726AE /* GameConfig.h */,
-				110EEA9E13F5E36B00D63490 /* images */,
 				4AA5A5A213F4B7AD00C726AE /* Resources */,
 				4AA5A5B613F4B7AD00C726AE /* libs */,
 				4AA5A76213F4B7AF00C726AE /* Supporting Files */,
@@ -1086,11 +1069,8 @@
 				4AA5A5B213F4B7AD00C726AE /* Icon@2x.png in Resources */,
 				4AA5A5B513F4B7AD00C726AE /* iTunesArtwork in Resources */,
 				4AA5A77413F4B7AF00C726AE /* blocks.png in Resources */,
-				110EEAA413F5E36B00D63490 /* ball.png in Resources */,
-				110EEAA513F5E36B00D63490 /* ball_FULL.png in Resources */,
-				110EEAA613F5E36B00D63490 /* Baseball.fla in Resources */,
-				110EEAA713F5E36B00D63490 /* old_faithful.png in Resources */,
-				110EEAA813F5E36B00D63490 /* old_faithful_FULL.png in Resources */,
+				4A2D9A6813F627F900B38898 /* ball.png in Resources */,
+				4A2D9A6913F627F900B38898 /* old_faithful.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
